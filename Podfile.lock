@@ -1,4 +1,7 @@
 PODS:
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
   - Realm (10.31.0):
     - Realm/Headers (= 10.31.0)
   - Realm/Headers (10.31.0)
@@ -27,6 +30,7 @@ PODS:
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - R.swift
   - RealmSwift
   - Resolver
   - RxCocoa
@@ -37,6 +41,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - R.swift
+    - R.swift.Library
     - Realm
     - RealmSwift
     - Resolver
@@ -48,6 +54,8 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   Realm: 10df7d86e1ca09d9948fdce2faa3fc623fb092c6
   RealmSwift: aecc52389574be4d451bf6cb1b08824eaa17dad0
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
@@ -58,6 +66,6 @@ SPEC CHECKSUMS:
   RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 2f12e58526bde30f765330a2adc30efa4936f8d1
+PODFILE CHECKSUM: 40c9b1202692b8502384b03e20a95c11b2bedc1f
 
 COCOAPODS: 1.11.3

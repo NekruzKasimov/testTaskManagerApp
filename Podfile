@@ -15,5 +15,6 @@ target 'TestTaskManagerApp' do
   pod 'RealmSwift'
   pod 'RxRealm'
   pod 'SnapKit'
+  pod 'R.swift'
 
 end

@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TestTaskManagerApp
+
+  Created by Niko on 11.10.22.
+  
+*/
+
+
+"tabbar.mainViewController.title" = "Main";
+"tabbar.profileViewController.title" = "Profile";
