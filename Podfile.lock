@@ -1,0 +1,63 @@
+PODS:
+  - Realm (10.31.0):
+    - Realm/Headers (= 10.31.0)
+  - Realm/Headers (10.31.0)
+  - RealmSwift (10.31.0):
+    - Realm (= 10.31.0)
+  - Resolver (1.5.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRealm (5.0.4):
+    - Realm (~> 10.21)
+    - RealmSwift (~> 10.21)
+    - RxCocoa (~> 6.1)
+    - RxSwift (~> 6.1)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - RxSwiftExt (6.0.1):
+    - RxSwiftExt/Core (= 6.0.1)
+    - RxSwiftExt/RxCocoa (= 6.0.1)
+  - RxSwiftExt/Core (6.0.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.0.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - RealmSwift
+  - Resolver
+  - RxCocoa
+  - RxRealm
+  - RxSwift
+  - RxSwiftExt
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
+    - Resolver
+    - RxCocoa
+    - RxRealm
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Realm: 10df7d86e1ca09d9948fdce2faa3fc623fb092c6
+  RealmSwift: aecc52389574be4d451bf6cb1b08824eaa17dad0
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRealm: 666c8785327fe2fff972a3093b35dc7055c1ca38
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxSwiftExt: d61c4b9b06e0a448041b1c659e0f1b5c5a035afc
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 2f12e58526bde30f765330a2adc30efa4936f8d1
+
+COCOAPODS: 1.11.3
