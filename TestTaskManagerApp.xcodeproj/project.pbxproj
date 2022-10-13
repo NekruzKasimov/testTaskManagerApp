@@ -40,6 +40,16 @@
 		23DE2F4328F7E5B500273340 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F4228F7E5B500273340 /* UserRepository.swift */; };
 		23DE2F4528F7E5CE00273340 /* RealmMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F4428F7E5CE00273340 /* RealmMigrator.swift */; };
 		23DE2F4728F7E60200273340 /* Realm+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F4628F7E60200273340 /* Realm+Extension.swift */; };
+		23DE2F4A28F8313300273340 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F4928F8313300273340 /* TaskDetailViewController.swift */; };
+		23DE2F4C28F8314B00273340 /* TaskDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F4B28F8314B00273340 /* TaskDetailViewModel.swift */; };
+		23DE2F4E28F8315C00273340 /* TaskDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F4D28F8315C00273340 /* TaskDetailNavigator.swift */; };
+		23DE2F5128F831A700273340 /* NewTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F5028F831A700273340 /* NewTaskViewModel.swift */; };
+		23DE2F5328F831BD00273340 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F5228F831BD00273340 /* NewTaskViewController.swift */; };
+		23DE2F5528F831ED00273340 /* NewTaskNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F5428F831ED00273340 /* NewTaskNavigator.swift */; };
+		23DE2F5728F8325A00273340 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F5628F8325A00273340 /* TaskModel.swift */; };
+		23DE2F5928F8329200273340 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F5828F8329200273340 /* TaskRepository.swift */; };
+		23DE2F5C28F832DA00273340 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F5B28F832DA00273340 /* MainTableViewCell.swift */; };
+		23DE2F5E28F8335800273340 /* RxSwift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DE2F5D28F8335800273340 /* RxSwift+Extension.swift */; };
 		F028C289CF428C4B51F0821C /* Pods_TestTaskManagerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0F7B601E67502A225F1563 /* Pods_TestTaskManagerApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +89,16 @@
 		23DE2F4228F7E5B500273340 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		23DE2F4428F7E5CE00273340 /* RealmMigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMigrator.swift; sourceTree = "<group>"; };
 		23DE2F4628F7E60200273340 /* Realm+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Extension.swift"; sourceTree = "<group>"; };
+		23DE2F4928F8313300273340 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		23DE2F4B28F8314B00273340 /* TaskDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewModel.swift; sourceTree = "<group>"; };
+		23DE2F4D28F8315C00273340 /* TaskDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailNavigator.swift; sourceTree = "<group>"; };
+		23DE2F5028F831A700273340 /* NewTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewModel.swift; sourceTree = "<group>"; };
+		23DE2F5228F831BD00273340 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		23DE2F5428F831ED00273340 /* NewTaskNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskNavigator.swift; sourceTree = "<group>"; };
+		23DE2F5628F8325A00273340 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		23DE2F5828F8329200273340 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		23DE2F5B28F832DA00273340 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		23DE2F5D28F8335800273340 /* RxSwift+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Extension.swift"; sourceTree = "<group>"; };
 		59A82FA233CF74335A9F1147 /* Pods-TestTaskManagerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskManagerApp.release.xcconfig"; path = "Target Support Files/Pods-TestTaskManagerApp/Pods-TestTaskManagerApp.release.xcconfig"; sourceTree = "<group>"; };
 		CB948FCE039D1F2837480AA4 /* Pods-TestTaskManagerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskManagerApp.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskManagerApp/Pods-TestTaskManagerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CF0F7B601E67502A225F1563 /* Pods_TestTaskManagerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskManagerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +139,8 @@
 				23DE2F2328F7E17200273340 /* Auth */,
 				2379F50328F5782F00479602 /* Tabbar */,
 				2379F50C28F578E700479602 /* MainPage */,
+				23DE2F4828F8311B00273340 /* TaskDetail */,
+				23DE2F4F28F8319000273340 /* NewTask */,
 				2379F51928F57AC400479602 /* Profile */,
 			);
 			path = Screens;
@@ -137,6 +159,7 @@
 		2379F50C28F578E700479602 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				23DE2F5A28F832CC00273340 /* MainTableViewCell */,
 				2379F50D28F578F100479602 /* MainPageViewController.swift */,
 				2379F50F28F578FA00479602 /* MainPageViewModel.swift */,
 				2379F51128F5790500479602 /* MainPageNavigator.swift */,
@@ -161,6 +184,7 @@
 				23DE2F2C28F7E20500273340 /* UIAlertController+Extension.swift */,
 				23DE2F3128F7E2CA00273340 /* UITextField+Extension.swift */,
 				23DE2F4628F7E60200273340 /* Realm+Extension.swift */,
+				23DE2F5D28F8335800273340 /* RxSwift+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				23DE2F3C28F7E51A00273340 /* UserModel.swift */,
+				23DE2F5628F8325A00273340 /* TaskModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,8 +305,37 @@
 			children = (
 				23DE2F4028F7E59A00273340 /* Repository.swift */,
 				23DE2F4228F7E5B500273340 /* UserRepository.swift */,
+				23DE2F5828F8329200273340 /* TaskRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		23DE2F4828F8311B00273340 /* TaskDetail */ = {
+			isa = PBXGroup;
+			children = (
+				23DE2F4928F8313300273340 /* TaskDetailViewController.swift */,
+				23DE2F4B28F8314B00273340 /* TaskDetailViewModel.swift */,
+				23DE2F4D28F8315C00273340 /* TaskDetailNavigator.swift */,
+			);
+			path = TaskDetail;
+			sourceTree = "<group>";
+		};
+		23DE2F4F28F8319000273340 /* NewTask */ = {
+			isa = PBXGroup;
+			children = (
+				23DE2F5228F831BD00273340 /* NewTaskViewController.swift */,
+				23DE2F5028F831A700273340 /* NewTaskViewModel.swift */,
+				23DE2F5428F831ED00273340 /* NewTaskNavigator.swift */,
+			);
+			path = NewTask;
+			sourceTree = "<group>";
+		};
+		23DE2F5A28F832CC00273340 /* MainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				23DE2F5B28F832DA00273340 /* MainTableViewCell.swift */,
+			);
+			path = MainTableViewCell;
 			sourceTree = "<group>";
 		};
 		B6D4729919AB8B6B09DB489B /* Frameworks */ = {
@@ -428,29 +482,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DE2F3028F7E2AF00273340 /* InputTextField.swift in Sources */,
+				23DE2F5328F831BD00273340 /* NewTaskViewController.swift in Sources */,
 				2379F51228F5790500479602 /* MainPageNavigator.swift in Sources */,
 				2379F51F28F57B0400479602 /* ProfileNavigator.swift in Sources */,
 				23DE2F4728F7E60200273340 /* Realm+Extension.swift in Sources */,
 				2379F52228F58E5C00479602 /* R.generated.swift in Sources */,
 				23DE2F2B28F7E1D800273340 /* LoginNavigator.swift in Sources */,
+				23DE2F4C28F8314B00273340 /* TaskDetailViewModel.swift in Sources */,
+				23DE2F5728F8325A00273340 /* TaskModel.swift in Sources */,
 				2379F51028F578FA00479602 /* MainPageViewModel.swift in Sources */,
 				23DE2F3A28F7E4A100273340 /* SignUpNavigator.swift in Sources */,
 				23DE2F3628F7E41900273340 /* SignUpViewController.swift in Sources */,
 				2379F50B28F5789A00479602 /* Dependancies.swift in Sources */,
+				23DE2F5C28F832DA00273340 /* MainTableViewCell.swift in Sources */,
 				2379F50E28F578F100479602 /* MainPageViewController.swift in Sources */,
+				23DE2F5928F8329200273340 /* TaskRepository.swift in Sources */,
 				23DE2F4328F7E5B500273340 /* UserRepository.swift in Sources */,
 				23DE2F4528F7E5CE00273340 /* RealmMigrator.swift in Sources */,
+				23DE2F5128F831A700273340 /* NewTaskViewModel.swift in Sources */,
 				2379F50928F5787100479602 /* TabbarNavigator.swift in Sources */,
+				23DE2F5528F831ED00273340 /* NewTaskNavigator.swift in Sources */,
 				23DE2F3828F7E48D00273340 /* SignUpViewModel.swift in Sources */,
 				23DE2F3228F7E2CA00273340 /* UITextField+Extension.swift in Sources */,
 				2379F51528F57A1200479602 /* BaseViewController.swift in Sources */,
 				2379F51B28F57AD700479602 /* ProfileViewController.swift in Sources */,
 				2379F51828F57A3E00479602 /* UIViewController+Extensions.swift in Sources */,
+				23DE2F4A28F8313300273340 /* TaskDetailViewController.swift in Sources */,
 				23DE2F2928F7E1C500273340 /* LoginViewModel.swift in Sources */,
 				2379F50728F5785500479602 /* TabbarViewModel.swift in Sources */,
 				23DE2F3D28F7E51A00273340 /* UserModel.swift in Sources */,
+				23DE2F4E28F8315C00273340 /* TaskDetailNavigator.swift in Sources */,
 				238A699628F576C50037EE0D /* AppDelegate.swift in Sources */,
 				23DE2F2728F7E1B200273340 /* LoginViewController.swift in Sources */,
+				23DE2F5E28F8335800273340 /* RxSwift+Extension.swift in Sources */,
 				23DE2F3428F7E3A900273340 /* AcceptButton.swift in Sources */,
 				2379F51D28F57AE600479602 /* ProfileViewModel.swift in Sources */,
 				23DE2F2D28F7E20500273340 /* UIAlertController+Extension.swift in Sources */,

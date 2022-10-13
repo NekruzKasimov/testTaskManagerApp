@@ -13,13 +13,20 @@ import RxSwift
 import Resolver
 
 protocol ITabbarScreen: AnyObject {
-    var viewModel: ITabbarViewModel! { set get }
+    var viewModel: ITabbarViewModel! { get set }
 }
 
 typealias ITabbarViewController = UITabBarController & ITabbarScreen
 
-final class TabbarViewController: ITabbarViewController {
-    var viewModel: ITabbarViewModel!
+class TabbarViewController: ITabbarViewController {
+    var viewModel: ITabbarViewModel! {
+        didSet {
+            bind()
+        }
+    }
+    
+    private var rightBarButton = UIBarButtonItem()
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +35,20 @@ final class TabbarViewController: ITabbarViewController {
     
     func setupView() {
         view.backgroundColor = .white
-        setupControllers()
+        rightBarButton = UIBarButtonItem(title: R.string.localizable.tabBarAddTaskTitle(), style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem = rightBarButton
+        setControllers()
     }
     
-    func setupControllers() {
+    func bind() {
+        let input = TabbarViewModel.Input(addContacts: rightBarButton.rx.tap.asSignal())
+
+        let output = viewModel.transform(input)
+
+        disposeBag.insert([output.contactsOutput.emit()])
+    }
+    
+    func setControllers() {
         let mainScreen = Resolver.resolve(IMainPageViewController.self)
         let profileScreen = Resolver.resolve(IProfileViewController.self)
         let icon1 = UITabBarItem(title: R.string.localizable.tabbarMainViewControllerTitle(), image: R.image.home(), selectedImage: R.image.home())

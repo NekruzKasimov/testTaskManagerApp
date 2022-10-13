@@ -30,6 +30,9 @@ extension Resolver: ResolverRegistering {
         registerSignUpPage()
         registerRealmMigrator()
         registerUserRepository()
+        registerTaskRepository()
+        registerNewTaskPage()
+        registerTaskDetailPage()
     }
     
     
@@ -41,14 +44,14 @@ extension Resolver: ResolverRegistering {
     
     private static func registerMainPage() {
         register(IMainPageNavigator.self) { MainPageNavigator(viewController: $1.get()) }
-        register(IMainPageViewModel.self) { MainPageViewModel(navigator: $0.resolve(args: $1.get())) }
+        register(IMainPageViewModel.self) { MainPageViewModel(navigator: $0.resolve(args: $1.get()), taskRepository: $0.resolve()) }
         register(IMainPageViewController.self) { MainPageViewController() } .resolveProperties { $1.viewModel = $0.optional(args: $1) }
     }
     
     
     private static func registerProfilePage() {
         register(IProfileNavigator.self) { ProfileNavigator(viewController: $1.get()) }
-        register(IProfileViewModel.self) { ProfileViewModel(navigator: $0.resolve(args: $1.get())) }
+        register(IProfileViewModel.self) { ProfileViewModel(userRepository: $0.resolve(), navigator: $0.resolve(args: $1.get())) }
         register(IProfileViewController.self) { ProfileViewController() } .resolveProperties { $1.viewModel = $0.optional(args: $1) }
     }
     
@@ -64,6 +67,40 @@ extension Resolver: ResolverRegistering {
         register(ISignUpViewModel.self) { SignUpViewModel(userRepository: $0.resolve(), navigator: $0.resolve(args: $1.get())) }
         register(ISignUpViewController.self) { SignUpViewController() }
             .resolveProperties { $1.viewModel = $0.optional(args: $1) }
+    }
+    
+    private static func registerNewTaskPage() {
+        register(INewTaskNavigator.self) { NewTaskNavigator(viewController: $1.get()) }
+        register(INewTaskViewModel.self) { NewTaskViewModel(navigator: $0.resolve(args: $1.get()), taskRepository: $0.resolve(), userRepository: $0.resolve()) }
+        register(INewTaskViewController.self) { NewTaskViewController() }
+            .resolveProperties { $1.viewModel = $0.optional(args: $1) }
+    }
+    
+    private static func registerTaskDetailPage() {
+        register(ITaskDetailNavigator.self) {
+            TaskDetailNavigator(
+            viewController: $1.get())
+            
+        }
+        
+        register(ITaskDetailViewModel.self) {
+            TaskDetailViewModel(
+            navigator: $0.resolve(args: $1.get("vc")),
+            taskRepository: $0.resolve(),
+            userRepository: $0.resolve(),
+            task: $1.get("task"))
+        }
+        
+        register(ITaskDetailViewController.self) {
+            TaskDetailViewController() }
+            .resolveProperties {
+                let args: [String : Any] = [
+                    "vc" : $1,
+                    "task" : $2.get("task") as TaskModel,
+                ]
+                $1.viewModel = $0.optional(args: args)
+                
+            }
     }
     
 }

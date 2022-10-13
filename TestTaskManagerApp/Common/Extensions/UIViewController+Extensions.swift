@@ -7,6 +7,9 @@
 
 import Foundation
 import UIKit
+import RxCocoa
+import RxSwift
+import RxSwiftExt
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
@@ -18,4 +21,12 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+}
+
+extension Reactive where Base: UIViewController {
+    
+    var viewWillAppear: ControlEvent<Void> {
+        return ControlEvent(events: self.sentMessage(#selector(Base.viewWillAppear)).mapTo(()))
+    }
+    
 }

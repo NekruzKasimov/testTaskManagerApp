@@ -19,3 +19,10 @@
 "accept.buttonTitle" = "Accept";
 "signUp.name.placeholder" = "Name";
 "signUp.lastname.placeholder" = "Last Name";
+"newTask.titleField.warningMessage" = "Title field is required";
+"mainCell.content.placeholder" = "Content";
+"mainCell.title.placeholder" = "Title";
+"tabBar.addTask.title" = "Add";
+"new.task.createLabel.text" = "Create a new task";
+"profilePage.signOut.buttonTitle" = "Sign out";
+"profilePage.title" = "Profile PAGE";
