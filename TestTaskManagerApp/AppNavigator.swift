@@ -11,10 +11,16 @@ import RxCocoa
 
 struct AppNavigator {
 
+    let userRepository: IUserRepository
     let window: UIWindow
 
     func start() -> Signal<Void> {
-        let vc = Resolver.resolve(ITabbarViewController.self)
+        var vc: UIViewController = Resolver.resolve(ILoginViewController.self)
+
+        if userRepository.getSignedUser() != nil {
+            vc = Resolver.resolve(ITabbarViewController.self)
+        }
+        self.window.overrideUserInterfaceStyle = .light
         self.window.rootViewController = UINavigationController(rootViewController: vc)
         self.window.makeKeyAndVisible()
         return .never()

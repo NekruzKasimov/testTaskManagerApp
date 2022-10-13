@@ -25,6 +25,5 @@ final class MainPageViewController: IMainPageViewController {
     }
     
     func setupView() {
-        view.backgroundColor = .white
     }
 }

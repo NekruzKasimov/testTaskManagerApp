@@ -9,3 +9,13 @@
 
 "tabbar.mainViewController.title" = "Main";
 "tabbar.profileViewController.title" = "Profile";
+"alert.ok.actionTitle" = "Ok";
+"alert.title" = "Alert";
+"login.wrongUsername.alertMessage" = "Wrong username or password\n Try again";
+"login.fillUpFields.alertMessage" = "Fill up all of the fields";
+"login.signUpButton.title" = "SignUp";
+"login.password.placeholder" = "Password";
+"login.username.placeholder" = "Username";
+"accept.buttonTitle" = "Accept";
+"signUp.name.placeholder" = "Name";
+"signUp.lastname.placeholder" = "Last Name";
